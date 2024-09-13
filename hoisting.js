@@ -31,6 +31,9 @@ example1(); // undefined
 example2(); // ReferenceError: Cannot access 'lastName' before initialization
 example3(); // ReferenceError: Cannot access 'NUM_OF_WEEKS' before initialization
 
-// question 🙋🏻‍♀️
+// questions 🙋🏻‍♀️
+// what is TDZ?
+    // TDZ stands for temporal dead zone and is the period where a variable is declared 
+    // but not yet initialized and cannot be accessed
 // only a variable with var keyword is hoisted
-    // FALSE - ReferenceError doesn't occur if a variable is not declared
+    // false - ReferenceError doesn't occur if a variable is not declared

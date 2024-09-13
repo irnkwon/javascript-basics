@@ -53,6 +53,6 @@ Number.isNaN([1, 2]); // false
 
 // questions 🙋🏻‍♀️
 // what does NaN === NaN return?
-    // FALSE - NaN is not equal to is considered unequal to anything, including itself
+    // false - NaN is not equal to is considered unequal to anything, including itself
 // what does console.log(typeof NaN) return?
     // number - NaN is number type in JavaScript
