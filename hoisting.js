@@ -1,7 +1,7 @@
 "use strict";
 
-// Hoisting is the process in JavaScript where all variable and constant 
-// "declarations" are placed in memory first
+// hoisting is the process in JavaScript where all variable and constant "declarations" 
+// are placed in memory first
 
 function example1() {
     // declaration hoisted 🅾️
