@@ -1,8 +1,9 @@
 "use strict";
 
-// hoisting is the process in JavaScript where all variable and constant "declarations" 
-// are placed in memory first
+// the process in JavaScript where all "declarations" are placed in memory first
 
+// 1. var / let / const hoisting
+// 1.1. with var keyword
 function example1() {
     // declaration hoisted 🅾️
     // initialized to undefined 🅾️
@@ -11,6 +12,7 @@ function example1() {
     var firstName = "Irene";
 }
 
+// 1.2. with let keyword
 function example2() {
     // declaration hoisted 🅾️
     // not initialized ❎
@@ -19,6 +21,7 @@ function example2() {
     let lastName;
 }
 
+// 1.3. with const keyword
 function example3() {
     // declaration hoisted 🅾️
     // not initialized ❎
@@ -30,6 +33,27 @@ function example3() {
 example1(); // undefined
 example2(); // ReferenceError: Cannot access 'lastName' before initialization
 example3(); // ReferenceError: Cannot access 'NUM_OF_WEEKS' before initialization
+
+// 2. function hoisting
+// 2.1. function declarations
+    // fully hoisted 🅾️
+    example4(); // "hello, world!"
+    function example4() {
+        return "hello, world!";
+    }
+
+// 2.2. function expressions
+    // not fully hoisted ❎
+    // only variable declaration is hoisted 🅾️
+    example5(); // TypeError: example5 is not a function
+    var example5 = function() {
+        return "hello, world!";
+    }
+
+    example6(); // ReferenceError: Cannot access 'example5' before initialization
+    let example6 = function() {
+        return "hello, world!";
+    }
 
 // questions 🙋🏻‍♀️
 // what is TDZ?
